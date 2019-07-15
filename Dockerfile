@@ -16,7 +16,7 @@ COPY 10-ssl.conf /etc/dovecot/conf.d/
 #COPY 15-lda.conf /etc/dovecot/conf.d/
 COPY 20-lmtp.conf /etc/dovecot/conf.d/
 COPY dovecot-openssl.cnf /root/
-RUN mv dovecot-openssl.cnf/mkcert.sh /root/
+RUN cp /usr/share/dovecot/mkcert.sh /root/
 RUN chmod +X /root/mkcert.sh
 RUN cd /root; ./mkcert.sh
 #COPY users /etc/dovecot/
