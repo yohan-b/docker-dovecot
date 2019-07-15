@@ -12,9 +12,9 @@ EXPOSE 4190
 COPY 10-master.conf /etc/dovecot/conf.d/
 COPY 10-logging.conf /etc/dovecot/conf.d/
 COPY 10-auth.conf /etc/dovecot/conf.d/
-COPY 15-lda.conf /etc/dovecot/conf.d/
+#COPY 15-lda.conf /etc/dovecot/conf.d/
 COPY 20-lmtp.conf /etc/dovecot/conf.d/
-COPY users /etc/dovecot/
+#COPY users /etc/dovecot/
 RUN mkdir /home/yohan
 RUN chown -R 1000:1000 /home/yohan
 ENTRYPOINT ["/usr/sbin/dovecot", "-F", "-c", "/etc/dovecot/dovecot.conf"]
