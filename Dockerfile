@@ -1,7 +1,7 @@
-FROM debian:wheezy
+FROM debian:jessie
 MAINTAINER yohan <783b8c87@scimetis.net>
 ENV DEBIAN_FRONTEND noninteractive
-RUN echo "deb http://http.debian.net/debian wheezy-backports main" >> /etc/apt/sources.list
+#RUN echo "deb http://http.debian.net/debian jessie-backports main" >> /etc/apt/sources.list
 RUN apt-get update && apt-get -y install dovecot-core dovecot-imapd dovecot-managesieved dovecot-sieve dovecot-solr dovecot-antispam dovecot-lmtpd
 # IMAPS
 EXPOSE 993
