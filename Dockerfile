@@ -12,6 +12,7 @@ EXPOSE 4190
 COPY 10-master.conf /etc/dovecot/conf.d/
 COPY 10-logging.conf /etc/dovecot/conf.d/
 COPY 10-auth.conf /etc/dovecot/conf.d/
+COPY 10-ssl.conf /etc/dovecot/conf.d/
 #COPY 15-lda.conf /etc/dovecot/conf.d/
 COPY 20-lmtp.conf /etc/dovecot/conf.d/
 #COPY users /etc/dovecot/
