@@ -15,9 +15,9 @@ x509_extensions         = v3_req
 
 [ req_distinguished_name ]
 organizationName = scimetis.net
-organizationalUnitName = @commonName@
-commonName = @commonName@
-emailAddress = @emailAddress@
+organizationalUnitName = mail
+commonName = *.scimetis.net
+emailAddress = no-reply@scimetis.net
 
 [ v3_req ]
 basicConstraints        = CA:FALSE
